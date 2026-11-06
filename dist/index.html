@@ -93,35 +93,55 @@
     @media(max-width:760px){
       .wrap{padding:0 18px}
       .navlinks{display:none}
-      nav{height:69px}
+      nav{height:64px}
+      .brand{min-height:44px;padding:4px 0}
       .logo{height:40px}
-      .hero-inner{grid-template-columns:1fr;padding-top:44px;gap:35px}
-      .hero-photo{height:380px;margin:0 -18px}
-      .hero h1{font-size:68px}
-      .hero-bottom{font-size:11px;display:block}
-      .hero-bottom div+div{margin-top:7px}
+      .hero-inner{grid-template-columns:1fr;align-items:start;min-height:0;padding-top:22px;gap:16px}
+      .hero-photo{height:auto;min-height:0;margin:0 -18px;background:none;display:block}
+      .hero-photo::before{content:"";display:block;width:100%;aspect-ratio:1283/296;background:#0e0e0c url('images/logo.jpg') center/cover no-repeat}
+      .hero h1{font-size:56px;margin-bottom:12px}
+      .hero-copy{margin-bottom:14px;font-size:16px}
+      .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .hero-actions .button{padding:14px 8px;font-size:11px;letter-spacing:.04em;gap:6px;white-space:nowrap}
+      .hero-actions .button.arrow::after{font-size:14px}
+      .hero-bottom{font-size:12px;line-height:1.45;display:block;padding:14px 0 6px}
+      .hero-bottom div+div{margin-top:6px}
       .numbers{grid-template-columns:1fr}
-      .stat,.stat:not(:first-child){padding:20px 0;border-right:0;border-bottom:1px solid #d2cec5}
-      .section{padding:75px 0}
-      .section-grid,.experience-grid,.visit-card{grid-template-columns:1fr;gap:35px}
-      .section-grid{gap:38px}
+      .stat,.stat:not(:first-child){padding:12px 0;border-right:0;border-bottom:1px solid #d2cec5}
+      .section{padding:64px 0}
+      .section.wrap{padding-left:18px;padding-right:18px}
+      .section-grid,.experience-grid,.visit-card{grid-template-columns:1fr;gap:28px}
+      .section-grid{gap:28px}
+      .section-title{font-size:42px}
       .experience{padding:0}
-      .experience-photo{min-height:390px;margin:0 -18px}
-      .experience .wrap{padding-top:70px;padding-bottom:70px}
-      .team{padding-top:75px}
-      .team-head{display:block}
-      .people{grid-template-columns:1fr;gap:10px}
-      .person{min-height:420px}
-      .visit-card{padding:27px;gap:34px}
+      .experience-photo{min-height:320px;margin:0 -18px}
+      .experience .wrap{padding-top:56px;padding-bottom:56px}
+      .experience h2{font-size:46px}
+      .team{padding-top:64px}
+      .team-head{display:block;margin-bottom:22px}
+      .team-head p{margin:14px 0 0}
+      .people{grid-template-columns:1fr 1fr;gap:10px}
+      .person{min-height:250px}
+      .person-body{padding:40px 10px 8px}
+      .person h3{font-size:20px;line-height:.95;overflow-wrap:break-word}
+      .person a{display:flex;align-items:center;min-height:44px;padding:6px 0 4px;font-size:11px;letter-spacing:.03em;line-height:1.25}
+      .visit{padding-top:64px;padding-bottom:48px}
+      .visit-card{padding:22px 18px;gap:26px}
+      .visit h2{font-size:42px}
       .footer-top{display:block}
       .footer-copy{margin-top:20px}
+      .footer{padding-bottom:28px}
       .footer-bottom{display:block;line-height:1.7}
-      .mobile-book{display:flex;position:fixed;bottom:14px;left:14px;right:14px;z-index:5;box-shadow:0 8px 26px rgba(0,0,0,.27)}
-      .photo-tag{left:18px}
-      .service{grid-template-columns:35px 1fr auto}
-      .service h3{font-size:16px}
-      .service p{font-size:12px}
-      .price{font-size:18px}
+      .footer-bottom span{display:block}
+      .footer-bottom span+span{margin-top:6px}
+      body{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
+      .mobile-book{display:flex;position:fixed;bottom:calc(14px + env(safe-area-inset-bottom));left:14px;right:14px;z-index:5;box-shadow:0 8px 26px rgba(0,0,0,.27)}
+      .photo-tag{position:static;display:inline-block;margin:12px 0 0 12px;max-width:calc(100% - 24px)}
+      .services{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;align-items:stretch}
+      .service{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-width:0;height:100%;padding:14px 0 16px}
+      .service h3{font-size:14px;line-height:1.25;letter-spacing:-.02em}
+      .service p{font-size:12px;line-height:1.4}
+      .price{font-size:17px;margin-top:auto;padding-top:8px}
     }
   </style>
 </head>
