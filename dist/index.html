@@ -9,22 +9,151 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#11110f;--paper:#f4f0e8;--lime:#dcf62a;--orange:#ff6a36;--muted:#bdb9b0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}.wrap{max-width:1240px;margin:auto;padding:0 28px}.eyebrow{font:500 11px/1.1 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.09em}.top{background:var(--lime);overflow:hidden;white-space:nowrap;padding:9px 0;font:500 11px 'DM Mono',monospace;letter-spacing:.11em;text-transform:uppercase}.ticker{display:inline-block;animation:scroll 28s linear infinite}@keyframes scroll{to{transform:translateX(-20%)}}nav{height:80px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font:700 23px/1 Oswald,sans-serif;letter-spacing:-.04em;text-transform:uppercase}.mark{width:32px;height:32px;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-size:17px}.navlinks{display:flex;gap:29px;align-items:center}.navlinks a{font:600 12px Manrope;text-transform:uppercase;letter-spacing:.05em;color:inherit;text-decoration:none}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);color:white;border:1px solid var(--ink);padding:14px 20px;text-decoration:none;font:600 12px Manrope;text-transform:uppercase;letter-spacing:.06em;transition:.2s}.button:hover{background:var(--lime);color:var(--ink)}.button.light{background:var(--lime);color:var(--ink);border-color:var(--lime)}.button.light:hover{background:white}.button.arrow::after{content:'↗';font-size:17px;line-height:0}.hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}.hero-inner{min-height:620px;display:grid;grid-template-columns:1.08fr .92fr;align-items:end;gap:44px;padding-top:64px}.hero h1{font:700 clamp(64px,9.3vw,136px)/.84 Oswald,sans-serif;text-transform:uppercase;letter-spacing:-.05em;margin:12px 0 27px}.hero h1 em{color:var(--lime);font-style:normal}.hero-copy{max-width:460px;color:#d4d1ca;font-size:17px;line-height:1.6;margin-bottom:30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-actions .button:not(.light){border-color:#777;background:transparent}.hero-photo{height:540px;position:relative;background:radial-gradient(circle at 66% 34%,#f6f2ea 0 2%,transparent 2.5%),repeating-linear-gradient(90deg,transparent 0 35px,rgba(220,246,42,.13) 36px 38px),linear-gradient(135deg,#363630 0%,#151512 52%,#7b941e 53%,#dcf62a 100%),url('https://images.unsplash.com/photo-1622286346003-c23f8e1d5f30?auto=format&fit=crop&w=1200&q=85') center/cover;background-blend-mode:screen,normal,normal,normal}.photo-tag{position:absolute;bottom:20px;left:-20px;background:var(--lime);color:var(--ink);padding:13px 15px;font:500 11px 'DM Mono',monospace;text-transform:uppercase;line-height:1.5}.hero-bottom{display:flex;justify-content:space-between;gap:16px;padding:23px 0;border-top:1px solid #41413c;font-size:13px;color:#c5c1b8}.hero-bottom strong{color:white}.numbers{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #d2cec5}.stat{padding:30px 0;border-right:1px solid #d2cec5}.stat:not(:first-child){padding-left:26px}.stat:last-child{border:0}.stat strong{font:600 clamp(35px,4.2vw,56px)/1 Oswald,sans-serif;letter-spacing:-.04em;display:block}.stat span{font:500 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#68645d}.section{padding:110px 0}.section-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:78px}.section-title{font:600 clamp(46px,5.4vw,78px)/.92 Oswald,sans-serif;letter-spacing:-.045em;text-transform:uppercase;margin:12px 0 0}.services{border-top:2px solid var(--ink)}.service{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:24px 0;border-bottom:1px solid #ccc8bf}.service-num{font:500 11px 'DM Mono',monospace}.service h3{margin:0 0 5px;font-size:19px;letter-spacing:-.03em}.service p{margin:0;color:#68645d;font-size:13px}.price{font:600 20px Oswald,sans-serif}.experience{background:#20201d;color:var(--paper)}.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.experience-photo{min-height:560px;background:linear-gradient(140deg,rgba(220,246,42,.9),transparent 38%),repeating-linear-gradient(0deg,transparent 0 41px,rgba(244,240,232,.13) 42px 43px),url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=85') center/cover;background-color:#45453c}.experience h2{font:600 clamp(49px,6.2vw,88px)/.9 Oswald,sans-serif;letter-spacing:-.045em;text-transform:uppercase;margin:14px 0 25px}.experience p{max-width:470px;color:#cac7be;line-height:1.7;font-size:16px}.checks{list-style:none;padding:0;margin:31px 0}.checks li{padding:15px 0;border-top:1px solid #4a4944;font-size:14px}.checks li:before{content:'✦';color:var(--lime);margin-right:12px}.team{padding:110px 0 0}.team-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:40px}.team-head p{max-width:360px;color:#68645d;line-height:1.6;font-size:14px}.people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.person{background:#dbd7ce;padding:20px;min-height:277px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}.person:nth-child(2){background:var(--lime)}.person:nth-child(3){background:var(--orange)}.person:before{content:'';position:absolute;width:210px;height:210px;border-radius:50%;border:1px solid rgba(17,17,15,.22);top:-98px;right:-55px}.person .eyebrow{position:relative}.person h3{position:relative;font:600 41px/.9 Oswald,sans-serif;letter-spacing:-.04em;text-transform:uppercase;margin:36px 0 7px}.person a{position:relative;color:inherit;font:600 12px Manrope;text-transform:uppercase;letter-spacing:.06em;text-decoration:none}.visit{padding:110px 0}.visit-card{background:var(--lime);padding:42px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px}.visit h2{font:600 clamp(50px,6.7vw,91px)/.88 Oswald,sans-serif;letter-spacing:-.05em;text-transform:uppercase;margin:12px 0 0}.details{display:grid;gap:22px;align-content:center}.detail{border-top:1px solid rgba(17,17,15,.36);padding-top:15px}.detail strong{display:block;text-transform:uppercase;font:600 12px Manrope;letter-spacing:.06em;margin-bottom:5px}.detail p,.detail a{font-size:15px;line-height:1.55;color:inherit;margin:0;text-decoration:none}.detail .muted{font-size:12px;margin-top:4px;opacity:.67}.footer{background:var(--ink);color:var(--paper);padding:45px 0 23px}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.footer .brand{font-size:32px}.footer-copy{font-size:13px;color:#bbb8af;max-width:340px;line-height:1.6}.footer-bottom{display:flex;justify-content:space-between;border-top:1px solid #3f3f3a;margin-top:40px;padding-top:18px;color:#8e8c86;font:11px 'DM Mono',monospace;text-transform:uppercase}.mobile-book{display:none}
-    @media(max-width:760px){.wrap{padding:0 18px}.navlinks{display:none}nav{height:69px}.hero-inner{grid-template-columns:1fr;padding-top:44px;gap:35px}.hero-photo{height:380px;margin:0 -18px}.hero h1{font-size:68px}.hero-bottom{font-size:11px;display:block}.hero-bottom div+div{margin-top:7px}.numbers{grid-template-columns:1fr}.stat,.stat:not(:first-child){padding:20px 0;border-right:0;border-bottom:1px solid #d2cec5}.section{padding:75px 0}.section-grid,.experience-grid,.visit-card{grid-template-columns:1fr;gap:35px}.section-grid{gap:38px}.experience{padding:0}.experience-photo{min-height:390px;margin:0 -18px}.experience .wrap{padding-top:70px;padding-bottom:70px}.team{padding-top:75px}.team-head{display:block}.people{grid-template-columns:1fr;gap:10px}.person{min-height:205px}.visit-card{padding:27px;gap:34px}.footer-top{display:block}.footer-copy{margin-top:20px}.footer-bottom{display:block;line-height:1.7}.mobile-book{display:flex;position:fixed;bottom:14px;left:14px;right:14px;z-index:5;box-shadow:0 8px 26px rgba(0,0,0,.27)}.photo-tag{left:18px}.service{grid-template-columns:35px 1fr auto}.service h3{font-size:16px}.service p{font-size:12px}.price{font-size:18px}}
+    :root{--ink:#11110f;--paper:#f4f0e8;--lime:#62a77d;--blue:#4f8faa;--muted:#bdb9b0}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}
+    .wrap{max-width:1240px;margin:auto;padding:0 28px}
+    .eyebrow{font:500 11px/1.1 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.09em}
+    .top{background:var(--lime);overflow:hidden;white-space:nowrap;padding:9px 0;font:500 11px 'DM Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
+    .ticker{display:inline-block;animation:scroll 28s linear infinite}
+    @keyframes scroll{to{transform:translateX(-20%)}}
+    nav{height:80px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;font:700 23px/1 Oswald,sans-serif;letter-spacing:-.04em;text-transform:uppercase}
+    .logo{height:48px;width:auto;display:block}
+    .navlinks{display:flex;gap:29px;align-items:center}
+    .navlinks a{font:600 12px Manrope;text-transform:uppercase;letter-spacing:.05em;color:inherit;text-decoration:none}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);color:white;border:1px solid var(--ink);padding:14px 20px;text-decoration:none;font:600 12px Manrope;text-transform:uppercase;letter-spacing:.06em;transition:.2s}
+    .button:hover{background:var(--lime);color:var(--ink)}
+    .button.light{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+    .button.light:hover{background:white}
+    .button.arrow::after{content:'↗';font-size:17px;line-height:0}
+    .hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+    .hero-inner{min-height:620px;display:grid;grid-template-columns:1.08fr .92fr;align-items:end;gap:44px;padding-top:64px}
+    .hero h1{font:700 clamp(64px,9.3vw,136px)/.84 Oswald,sans-serif;text-transform:uppercase;letter-spacing:-.05em;margin:12px 0 27px}
+    .hero h1 em{color:var(--lime);font-style:normal}
+    @supports ((-webkit-background-clip:text) or (background-clip:text)){
+      .hero h1 em{background:linear-gradient(90deg,#62a77d,#4f8faa);-webkit-background-clip:text;background-clip:text;color:transparent}
+    }
+    .hero-copy{max-width:460px;color:#d4d1ca;font-size:17px;line-height:1.6;margin-bottom:30px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-actions .button:not(.light){border-color:#777;background:transparent}
+    .hero-photo{height:540px;position:relative;background:#0e0e0c url('images/david.jpg') center 22%/cover}
+    .hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,15,.05),rgba(17,17,15,.18) 70%,rgba(17,17,15,.55));pointer-events:none}
+    .photo-tag{position:absolute;bottom:20px;left:-20px;z-index:1;background:var(--lime);color:var(--ink);padding:13px 15px;font:500 11px 'DM Mono',monospace;text-transform:uppercase;line-height:1.5}
+    .hero-bottom{display:flex;justify-content:space-between;gap:16px;padding:23px 0;border-top:1px solid #41413c;font-size:13px;color:#c5c1b8}
+    .hero-bottom strong{color:white}
+    .numbers{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #d2cec5}
+    .stat{padding:30px 0;border-right:1px solid #d2cec5}
+    .stat:not(:first-child){padding-left:26px}
+    .stat:last-child{border:0}
+    .stat strong{font:600 clamp(35px,4.2vw,56px)/1 Oswald,sans-serif;letter-spacing:-.04em;display:block}
+    .stat span{font:500 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#68645d}
+    .section{padding:110px 0}
+    .section-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:78px}
+    .section-title{font:600 clamp(46px,5.4vw,78px)/.92 Oswald,sans-serif;letter-spacing:-.045em;text-transform:uppercase;margin:12px 0 0}
+    .services{border-top:2px solid var(--ink)}
+    .service{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:24px 0;border-bottom:1px solid #ccc8bf}
+    .service-num{font:500 11px 'DM Mono',monospace}
+    .service h3{margin:0 0 5px;font-size:19px;letter-spacing:-.03em}
+    .service p{margin:0;color:#68645d;font-size:13px}
+    .price{font:600 20px Oswald,sans-serif;white-space:nowrap}
+    .experience{background:#20201d;color:var(--paper)}
+    .experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .experience-photo{min-height:560px;background:linear-gradient(140deg,rgba(98,167,125,.28),transparent 42%),url('images/norberto.jpg') center 18%/cover;background-color:#1a1a18}
+    .experience h2{font:600 clamp(49px,6.2vw,88px)/.9 Oswald,sans-serif;letter-spacing:-.045em;text-transform:uppercase;margin:14px 0 25px}
+    .experience p{max-width:470px;color:#cac7be;line-height:1.7;font-size:16px}
+    .checks{list-style:none;padding:0;margin:31px 0}
+    .checks li{padding:15px 0;border-top:1px solid #4a4944;font-size:14px}
+    .checks li:before{content:'✦';color:var(--lime);margin-right:12px}
+    .team{padding:110px 0 0}
+    .team-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:40px}
+    .team-head p{max-width:360px;color:#68645d;line-height:1.6;font-size:14px}
+    .people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .person{background:#1c1c1a;min-height:460px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;color:#f4f0e8}
+    .person img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 16%}
+    .person-body{position:relative;z-index:1;padding:72px 20px 20px;background:linear-gradient(180deg,transparent,rgba(12,12,10,.88) 46%)}
+    .person h3{font:600 clamp(28px,3vw,40px)/.9 Oswald,sans-serif;letter-spacing:-.04em;text-transform:uppercase;margin:10px 0 7px}
+    .person a{color:inherit;font:600 12px Manrope;text-transform:uppercase;letter-spacing:.06em;text-decoration:none}
+    .visit{padding:110px 0}
+    .visit-card{background:var(--lime);padding:42px;display:grid;grid-template-columns:1.1fr .9fr;gap:45px}
+    .visit h2{font:600 clamp(50px,6.7vw,91px)/.88 Oswald,sans-serif;letter-spacing:-.05em;text-transform:uppercase;margin:12px 0 0}
+    .details{display:grid;gap:22px;align-content:center}
+    .detail{border-top:1px solid rgba(17,17,15,.36);padding-top:15px}
+    .detail strong{display:block;text-transform:uppercase;font:600 12px Manrope;letter-spacing:.06em;margin-bottom:5px}
+    .detail p,.detail a{font-size:15px;line-height:1.55;color:inherit;margin:0;text-decoration:none}
+    a.button{color:#fff}
+    a.button.light,a.button:hover,a.button.light:hover{color:var(--ink)}
+    .detail .muted{font-size:12px;margin-top:4px;opacity:.67}
+    .footer{background:var(--ink);color:var(--paper);padding:45px 0 23px}
+    .footer-top{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+    .footer .logo{height:72px}
+    .footer-copy{font-size:13px;color:#bbb8af;max-width:340px;line-height:1.6}
+    .footer-bottom{display:flex;justify-content:space-between;border-top:1px solid #3f3f3a;margin-top:40px;padding-top:18px;color:#8e8c86;font:11px 'DM Mono',monospace;text-transform:uppercase}
+    .mobile-book{display:none}
+    @media(max-width:760px){
+      .wrap{padding:0 18px}
+      .navlinks{display:none}
+      nav{height:69px}
+      .logo{height:40px}
+      .hero-inner{grid-template-columns:1fr;padding-top:44px;gap:35px}
+      .hero-photo{height:380px;margin:0 -18px}
+      .hero h1{font-size:68px}
+      .hero-bottom{font-size:11px;display:block}
+      .hero-bottom div+div{margin-top:7px}
+      .numbers{grid-template-columns:1fr}
+      .stat,.stat:not(:first-child){padding:20px 0;border-right:0;border-bottom:1px solid #d2cec5}
+      .section{padding:75px 0}
+      .section-grid,.experience-grid,.visit-card{grid-template-columns:1fr;gap:35px}
+      .section-grid{gap:38px}
+      .experience{padding:0}
+      .experience-photo{min-height:390px;margin:0 -18px}
+      .experience .wrap{padding-top:70px;padding-bottom:70px}
+      .team{padding-top:75px}
+      .team-head{display:block}
+      .people{grid-template-columns:1fr;gap:10px}
+      .person{min-height:420px}
+      .visit-card{padding:27px;gap:34px}
+      .footer-top{display:block}
+      .footer-copy{margin-top:20px}
+      .footer-bottom{display:block;line-height:1.7}
+      .mobile-book{display:flex;position:fixed;bottom:14px;left:14px;right:14px;z-index:5;box-shadow:0 8px 26px rgba(0,0,0,.27)}
+      .photo-tag{left:18px}
+      .service{grid-template-columns:35px 1fr auto}
+      .service h3{font-size:16px}
+      .service p{font-size:12px}
+      .price{font-size:18px}
+    }
   </style>
 </head>
 <body>
   <div class="top"><div class="ticker">Precision cuts — clean fades — hot towel service — 4255 Tilghman Street, Allentown — book your chair today — &nbsp;&nbsp; Precision cuts — clean fades — hot towel service — 4255 Tilghman Street, Allentown — book your chair today —</div></div>
-  <header class="wrap"><nav><a href="#top" class="brand"><span class="mark">★</span>Five Star<br>Barbershop</a><div class="navlinks"><a href="#services">Services</a><a href="#barbers">Barbers</a><a href="#visit">Visit</a><a class="button" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book now</a></div></nav></header>
+  <header class="wrap"><nav><a href="#top" class="brand"><img class="logo" src="images/logo.jpg" alt="Five Star Barbershop"></a><div class="navlinks"><a href="#services">Services</a><a href="#barbers">Barbers</a><a href="#visit">Visit</a><a class="button" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book now</a></div></nav></header>
   <main id="top">
-    <section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow">Allentown, Pennsylvania · Est. for your best look</div><h1>Make it<br><em>five star.</em></h1><p class="hero-copy">Sharp haircuts, detailed fades, and grooming that leaves you looking put together from every angle.</p><div class="hero-actions"><a class="button light arrow" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book your chair</a><a class="button" href="#services">Explore services</a></div></div><div class="hero-photo"><div class="photo-tag">Walk in sharper<br>than you walked out</div></div></div><div class="wrap hero-bottom"><div><strong>4255 Tilghman St</strong> · Allentown, PA 18104</div><div>Open daily · appointments recommended</div></div></section>
-    <section class="wrap numbers" aria-label="Shop highlights"><div class="stat"><strong>5.0</strong><span>Shop rating on Squire</span></div><div class="stat"><strong>174</strong><span>Reviewed appointments</span></div><div class="stat"><strong>7</strong><span>Barbers to choose from</span></div></section>
-    <section class="section wrap" id="services"><div class="section-grid"><div><div class="eyebrow">The menu</div><h2 class="section-title">Built around<br>the details.</h2></div><div class="services"><div class="service"><span class="service-num">01</span><div><h3>Signature Haircut</h3><p>Personalized cut and finish, built around your style.</p></div><strong class="price">from $40</strong></div><div class="service"><span class="service-num">02</span><div><h3>Haircut + Beard</h3><p>Full service including hot towel and vapor-machine finish.</p></div><strong class="price">from $51.50</strong></div><div class="service"><span class="service-num">03</span><div><h3>Haircut + Eyebrows</h3><p>A clean cut with a sharper, finished frame.</p></div><strong class="price">from $45</strong></div><div class="service"><span class="service-num">04</span><div><h3>Kids & Senior Cuts</h3><p>Comfortable service for every generation.</p></div><strong class="price">from $36.50</strong></div></div></div></section>
-    <section class="experience"><div class="wrap experience-grid"><div class="experience-photo" role="img" aria-label="Barber tools on a work station"></div><div><div class="eyebrow">More than a haircut</div><h2>Leave with<br>your edge.</h2><p>Good grooming has a point of view. From the consultation to the final detail, every service is designed to help you show up looking confident.</p><ul class="checks"><li>Modern fades and classic cuts</li><li>Hot towel grooming services</li><li>Choose the barber that fits your style</li></ul><a class="button light arrow" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Reserve online</a></div></div></section>
-    <section class="team wrap" id="barbers"><div class="team-head"><div><div class="eyebrow">Meet the chair</div><h2 class="section-title">Pick your<br>professional.</h2></div><p>Book with the barber whose work and availability fit your schedule. More talent, one dependable standard.</p></div><div class="people"><article class="person"><span class="eyebrow">Allentown</span><h3>Sael P.</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">View availability ↗</a></article><article class="person"><span class="eyebrow">Allentown</span><h3>Vladimir P.</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">View availability ↗</a></article><article class="person"><span class="eyebrow">Allentown</span><h3>David G.</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">View availability ↗</a></article></div></section>
-    <section class="visit wrap" id="visit"><div class="visit-card"><div><div class="eyebrow">Find your chair</div><h2>Come through.<br>We’ll handle<br>the rest.</h2></div><div class="details"><div class="detail"><strong>Visit us</strong><a href="https://maps.google.com/?q=4255+Tilghman+St,+Allentown,+PA+18104" target="_blank" rel="noopener">4255 Tilghman St<br>Allentown, PA 18104 ↗</a></div><div class="detail"><strong>Hours</strong><p>Daily · opens at 8:00 AM</p><p class="muted">Check live availability when booking.</p></div><div class="detail"><strong>Ready when you are</strong><a class="button" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book now</a></div></div></div></section>
+    <section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow">Allentown, Pennsylvania · 5.0 on Squire</div><h1>Make it<br><em>five star.</em></h1><p class="hero-copy">Sharp haircuts, detailed fades, and grooming that leaves you looking put together from every angle.</p><div class="hero-actions"><a class="button light arrow" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book your chair</a><a class="button" href="#services">Explore services</a></div></div><div class="hero-photo" role="img" aria-label="David Giovinetto of Five Star Barbershop"><div class="photo-tag">Walk in sharper<br>than you walked out</div></div></div><div class="wrap hero-bottom"><div><strong>4255 Tilghman St</strong> · Allentown, PA 18104</div><div>Open daily 8:00 AM – 8:00 PM</div></div></section>
+    <section class="wrap numbers" aria-label="Shop highlights"><div class="stat"><strong>5.0</strong><span>Shop rating on Squire</span></div><div class="stat"><strong>180</strong><span>Reviews on Squire</span></div><div class="stat"><strong>6</strong><span>Barbers to choose from</span></div></section>
+    <section class="section wrap" id="services"><div class="section-grid"><div><div class="eyebrow">The menu</div><h2 class="section-title">Built around<br>the details.</h2></div><div class="services">
+      <div class="service"><span class="service-num">01</span><div><h3>Kids haircut with skin fade (8 years under) 👦🏻</h3><p>30 min</p></div><strong class="price">$36.50</strong></div>
+      <div class="service"><span class="service-num">02</span><div><h3>Haircut &amp; beard (hot towel &amp; vapor machine) 🧔🏻‍♂️</h3><p>40–50 min. This service includes: any hairstyle of choice, two type of face cream and hot towel.</p></div><strong class="price">$51.50–$55</strong></div>
+      <div class="service"><span class="service-num">03</span><div><h3>Haircut + Eyebrows ✅</h3><p>30 min</p></div><strong class="price">$45</strong></div>
+      <div class="service"><span class="service-num">04</span><div><h3>Haircut 👨🏻</h3><p>30 min</p></div><strong class="price">$40</strong></div>
+      <div class="service"><span class="service-num">05</span><div><h3>Kids haircut with skin fade (8 years and) under</h3><p>30 min</p></div><strong class="price">$40</strong></div>
+      <div class="service"><span class="service-num">06</span><div><h3>Senior Haircut (60 years up) 👨🏼‍🦳</h3><p>30 min</p></div><strong class="price">$36.50</strong></div>
+      <div class="service"><span class="service-num">07</span><div><h3>Kids Haircut 👦🏻</h3><p>30 min</p></div><strong class="price">$40</strong></div>
+      <div class="service"><span class="service-num">08</span><div><h3>Haircut 🥇</h3><p>30 min</p></div><strong class="price">$45</strong></div>
+    </div></div></section>
+    <section class="experience"><div class="wrap experience-grid"><div class="experience-photo" role="img" aria-label="Norberto Paulino at Five Star Barbershop"></div><div><div class="eyebrow">More than a haircut</div><h2>Leave with<br>your edge.</h2><p>Good grooming has a point of view. From the consultation to the final detail, every service is designed to help you show up looking confident.</p><ul class="checks"><li>Modern fades and classic cuts</li><li>Hot towel grooming services</li><li>Choose the barber that fits your style</li></ul><a class="button light arrow" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Reserve online</a></div></div></section>
+    <section class="team wrap" id="barbers"><div class="team-head"><div><div class="eyebrow">Meet the chair</div><h2 class="section-title">Pick your<br>professional.</h2></div><p>Six barbers. Book the chair whose work and availability fit your schedule.</p></div><div class="people">
+      <article class="person"><img src="images/norberto.jpg" alt="Norberto Paulino"><div class="person-body"><span class="eyebrow">5.0 · 10 reviews</span><h3>Norberto Paulino</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/norberto-paulino" target="_blank" rel="noopener">View availability ↗</a></div></article>
+      <article class="person"><img src="images/david.jpg" alt="David Giovinetto"><div class="person-body"><span class="eyebrow">5.0 · 15 reviews</span><h3>David Giovinetto</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/david-giovinetto" target="_blank" rel="noopener">View availability ↗</a></div></article>
+      <article class="person"><img src="images/deivy.jpg" alt="Deivy Fernandez"><div class="person-body"><span class="eyebrow">No ratings yet</span><h3>Deivy Fernandez</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/deivy-fernandez" target="_blank" rel="noopener">View availability ↗</a></div></article>
+      <article class="person"><img src="images/sael.jpg" alt="Sael Pantaleon"><div class="person-body"><span class="eyebrow">5.0 · 19 reviews</span><h3>Sael Pantaleon</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/sael-pantaleon" target="_blank" rel="noopener">View availability ↗</a></div></article>
+      <article class="person"><img src="images/vladimir.jpg" alt="Vladimir Paulino"><div class="person-body"><span class="eyebrow">5.0 · 22 reviews</span><h3>Vladimir Paulino</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/vladimir-paulino" target="_blank" rel="noopener">View availability ↗</a></div></article>
+      <article class="person"><img src="images/darlyn.jpg" alt="Darlyn Paulino"><div class="person-body"><span class="eyebrow">5.0 · 96 reviews</span><h3>Darlyn Paulino</h3><a href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown/barber/darlyn-paulino" target="_blank" rel="noopener">View availability ↗</a></div></article>
+    </div></section>
+    <section class="visit wrap" id="visit"><div class="visit-card"><div><div class="eyebrow">Find your chair</div><h2>Come through.<br>We’ll handle<br>the rest.</h2></div><div class="details"><div class="detail"><strong>Visit us</strong><a href="https://maps.google.com/?q=4255+Tilghman+St,+Allentown,+PA+18104" target="_blank" rel="noopener">4255 Tilghman St<br>Allentown, PA 18104 ↗</a></div><div class="detail"><strong>Hours</strong><p>Daily · 8:00 AM – 8:00 PM</p><p class="muted">Check live availability when booking.</p></div><div class="detail"><strong>Ready when you are</strong><a class="button" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book now</a></div></div></div></section>
   </main>
-  <footer class="footer"><div class="wrap"><div class="footer-top"><a href="#top" class="brand"><span class="mark">★</span>Five Star<br>Barbershop</a><p class="footer-copy">A better way to get booked, find your barber, and arrive knowing exactly what you’re getting.</p></div><div class="footer-bottom"><span>© 2026 Five Star Barbershop</span><span>Allentown, PA</span></div></div></footer>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><a href="#top" class="brand"><img class="logo" src="images/logo.jpg" alt="Five Star Barbershop"></a><p class="footer-copy">A better way to get booked, find your barber, and arrive knowing exactly what you’re getting.</p></div><div class="footer-bottom"><span>© 2026 Five Star Barbershop</span><span>Allentown, PA</span></div></div></footer>
   <a class="button light mobile-book arrow" href="https://getsquire.com/discover/barbershop/five-star-barbershop-allentown" target="_blank" rel="noopener">Book now</a>
 </body>
 </html>
